@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro javascript</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Testside for into til JavaScript</h1>
+
+    </header>
+
+    <main>
+
+        <!-- For å hente/bruker et HTML element så kan jeg bruke getElementById (ID for elementet jeg vil hente) dette krever at et element har f.eks <p id="eksempel-ID"> </p> -->
+        <section>
+            <div class="buttonSection"> <!--Her bruker jeg innerHTML for å endre innholdet av (P) elementet med innholdet i scripten min. Kunne også brukt .innerText om jeg forsto det riktig. Ser i etterkant her at innerHTML endrer teksten i elementet men kan også endre selve elementet til f-eks <h2></h2>, mens innertext er visst jeg kun ønsker å endre selve teksten.-->
+                <p id="demo">Denne linjen blir erstattet av javascript</p>
+                <script>
+                    document.getElementById("demo").innerHTML="Hello JavaScript";
+                </script>
+                <!-- Her bruker jeg .style.display="verdi" sammen med button onclick, for å si at når knappen blir tykket på skal display styling på elementet endres til "none" slik at det ikke kan sees. -->
+                <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+            </div>
+            <div>
+                <p id="demo2">This is a Paragraph</p>
+                <button type="button" onclick="myFunction()">Try me!</button>
+
+            </div>
+
+            <div>
+                <p id="resultatTest">
+                    Hva er 13+5?.
+                </p>
+                <button type="button" onclick="myFunction2()">Vis svar</button>
+            </div>
+        </section>
+        <section>
+            <p>hei</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
