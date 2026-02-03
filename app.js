@@ -1,6 +1,36 @@
+///Functions///
+
 function myFunction() {
     document.getElementById("demo2").innerHTML = "Paragraph changed"
 }
+
+function stateFunc1() {
+    document.getElementById("statements").innerHTML = statement1;
+}
+
+function stateFunc2() {
+    document.getElementById("statements").innerHTML = statement2;
+}
+
+function stateFunc3() {
+    document.getElementById("statements").innerHTML = statement3;
+}
+
+
+function greetFunc(){
+    const hour = new Date().getHours();
+    let greeting;
+
+    if (hour >= 9 && <= 3) {
+    greeting = "Good day";
+    } else {
+    greeting = "Good evening";
+    }
+
+    document.getElementById("greet").innerHTML = greeting;
+}
+
+
 
 //Under definerer jeg en variabel og endrer den ved å legge til en til variabel
 let x = 5;
@@ -18,17 +48,12 @@ statement1 = "Dette er første mulighet";
 statement2 = "Dette er andre mulighet";
 statement3 = "Dette er tredje mulighet";
 
-function stateFunc1() {
-    document.getElementById("statements").innerHTML = statement1;
-}
 
-function stateFunc2() {
-    document.getElementById("statements").innerHTML = statement2;
-}
 
-function stateFunc3() {
-    document.getElementById("statements").innerHTML = statement3;
-}
+
+
+
+
 
 
 
