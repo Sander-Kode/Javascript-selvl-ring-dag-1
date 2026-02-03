@@ -21,12 +21,15 @@ function greetFunc(){
     const hour = new Date().getHours();
     let greeting;
 
-    if (hour >= 9 && <= 3) {
-    greeting = "Good day";
-    } else {
-    greeting = "Good evening";
+    if (hour >= 9 && hour <= 12) {
+    greeting = "Good day"; 
+    } else if (hour >12 && hour <=15) {
+    greeting = "Good afternoon";
     }
-
+    // } else {
+    // greeting = "Good evening";
+    // }
+    
     document.getElementById("greet").innerHTML = greeting;
 }
 
