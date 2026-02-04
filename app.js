@@ -22,15 +22,38 @@ function greetFunc(){
     let greeting;
 
     if (hour >= 9 && hour <= 12) {
-    greeting = "Good day"; 
+    greeting = "Good morning"; 
     } else if (hour >12 && hour <=15) {
+    greeting = "Good day!";
+    } else if (hour >15 && hour <= 18) {
     greeting = "Good afternoon";
+    } else if (hour >18 && hour <=22){
+    greeting = "Good evening";
+    } else {
+    greeting = "Good night"
     }
-    // } else {
-    // greeting = "Good evening";
-    // }
+    
     
     document.getElementById("greet").innerHTML = greeting;
+}
+
+function testFunc (){
+    const x = 13;
+    let message;
+
+    if (x >= 1 && x <= 5){
+        message = "Tallet er mellom 1 og 5";
+    } else if (x >= 6 && x <=10){
+        message = "Tallet er mellom 6 og 10";
+    } else if (x >= 11 && x <= 15) {
+        message = "Tallet er mellom 11 og 15"
+    } else {
+        message = "Tallet er ikke i vårt register"
+    }
+
+    document.getElementById("msgTest").innerHTML = message;
+    
+
 }
 
 
