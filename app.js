@@ -23,6 +23,19 @@ function alderTest() {
     document.getElementById("alderSjekk").innerHTML = tekst;
 }
 
+function forslag(){
+    const matretter = ["Kjøttdeig og spaghetti", "Hamburger", "Lasagne", "Kyllingsalat", "Kokt torsk med saus og poteter", "Taco", "Kjøttkaker"];
+
+
+    let text1 = "";
+    for (let i = 0; i < matretter.length; i++){
+        text1 += matretter[i] + "<br>";
+    }
+document.getElementById("middager").innerHTML = text1;
+}
+
+
+
 //En funksjon som viser hvilken dato det er, knapp for å aktivere elementet ligger i HTML
 function dagViser() {
     let dag;
