@@ -16,7 +16,58 @@ function stateFunc3() {
     document.getElementById("statements").innerHTML = statement3;
 }
 
+function alderTest() {
+    let alder = 19;
+    let tekst = (alder < 18) ? "Mindreårig" : "Voksen";
+    
+    document.getElementById("alderSjekk").innerHTML = tekst;
+}
 
+//En funksjon som viser hvilken dato det er, knapp for å aktivere elementet ligger i HTML
+function dagViser() {
+    let dag;
+    let dato = new Date().getDay();
+
+    switch (dato) {
+        case 0:
+            dag = "Søndag";
+            break;
+        case 1:
+            dag = "Mandag";
+            break;
+        case 2:
+            dag = "Tirsdag";
+            break;
+        case 3:
+            dag = "Onsdag";
+            break;
+        case 4:
+            dag = "Torsdag";
+            break;
+        case 5:
+            dag = "Fredag";
+            break;
+        case 6:
+            dag = "Lørdag";
+            break;
+        default:
+            dag = "Det har skjedd en feil";
+        
+
+
+    }
+    document.getElementById("hvilkenDag").innerHTML = dag;
+
+    
+}
+//statements for funksjonene ovenfor, som blir hentet/omplassert i html ut i fra hvilken knapp som blir trykket på
+
+let statement1, statement2, statement3;
+statement1 = "Dette er første mulighet";
+statement2 = "Dette er andre mulighet";
+statement3 = "Dette er tredje mulighet";
+
+//Lager en funksjon som gir forskjellig hilsen ut ifra når på døgnet knappen blir trykket på
 function greetFunc(){
     const hour = new Date().getHours();
     let greeting;
@@ -36,7 +87,7 @@ function greetFunc(){
     
     document.getElementById("greet").innerHTML = greeting;
 }
-
+//Lager en funksjon som gir beskjed på innenfor hvilken tallrekke tallet ligger, basert på verdien til x
 function testFunc (){
     const x = 13;
     let message;
@@ -69,10 +120,7 @@ function myFunction2() {
     document.getElementById("resultatTest").innerHTML= resultat;
 }
 
-let statement1, statement2, statement3;
-statement1 = "Dette er første mulighet";
-statement2 = "Dette er andre mulighet";
-statement3 = "Dette er tredje mulighet";
+
 
 
 
